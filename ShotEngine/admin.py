@@ -252,6 +252,10 @@ class ShotRepositoryAdmin(admin.ModelAdmin):
     @transaction.atomic
     def changeform_view(self, request, object_id=None, form_url='', extra_context=None):
         print 'changeform_view'
+        print request
+        print object_id
+        print form_url
+        print extra_context
         return super(ShotRepositoryAdmin,self).changeform_view(request, object_id, form_url, extra_context)
 
             
