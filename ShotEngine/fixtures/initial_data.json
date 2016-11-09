@@ -1,0 +1,434 @@
+[
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 1, 
+        "fields":{
+            "departmentName":0
+            }
+    },
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 2, 
+        "fields":{
+            "departmentName":1
+            }
+    },
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 3, 
+        "fields":{
+            "departmentName":2
+            }
+    },
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 4, 
+        "fields":{
+            "departmentName":3
+            }
+    },
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 5, 
+        "fields":{
+            "departmentName":4
+            }
+    },
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 6, 
+        "fields":{
+            "departmentName":5
+            }
+    },
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 7, 
+        "fields":{
+            "departmentName":6
+            }
+    },
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 8, 
+        "fields":{
+            "departmentName":7
+            }
+    },
+    {
+        "model":"ShotEngine.DepartmentRepository",
+        "pk": 9, 
+        "fields":{
+            "departmentName":8
+            }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 1, 
+        "fields":{
+            "username":"hellen",
+            "alias_name":"Hellen",
+            "department":8,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":0,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 2, 
+        "fields":{
+            "username":"jessmin",
+            "alias_name":"Jessmin",
+            "department":8,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":0,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 3, 
+        "fields":{
+            "username":"baixiaohang",
+            "alias_name":"白晓航",
+            "department":8,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":1,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 4, 
+        "fields":{
+            "username":"wilson",
+            "alias_name":"原野",
+            "department":8,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":1,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 5, 
+        "fields":{
+            "username":"giancarlo",
+            "alias_name":"Giancarlo",
+            "department":9,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":4,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 6, 
+        "fields":{
+            "username":"chrisyao",
+            "alias_name":"姚琪",
+            "department":9,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":4,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 7, 
+        "fields":{
+            "username":"jonathan",
+            "alias_name":"沈建辉",
+            "department":7,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":2,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 8, 
+        "fields":{
+            "username":"fredyuan",
+            "alias_name":"袁宁",
+            "department":6,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":2,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 9, 
+        "fields":{
+            "username":"lijing",
+            "alias_name":"李晶",
+            "department":6,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":3,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 10, 
+        "fields":{
+            "username":"zhangjinchuan",
+            "alias_name":"张金川",
+            "department":6,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":3,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 11, 
+        "fields":{
+            "username":"wangjianfei",
+            "alias_name":"王健飞",
+            "department":7,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":3,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 12, 
+        "fields":{
+            "username":"chenxiaolei",
+            "alias_name":"陈小雷",
+            "department":7,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":3,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 13,
+        "fields":{
+            "username":"chenzhiyao",
+            "alias_name":"陈知瑶",
+            "department":6,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":5,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 14,
+        "fields":{
+            "username":"zhangle",
+            "alias_name":"张乐",
+            "department":6,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":5,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 15,
+        "fields":{
+            "username":"yangjiren",
+            "alias_name":"杨霁人",
+            "department":7,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":5,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 16,
+        "fields":{
+            "username":"anzhenxu",
+            "alias_name":"安振旭",
+            "department":7,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":5,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model":"ShotEngine.Corporator",
+        "pk": 17,
+        "fields":{
+            "username":"hardwellwu",
+            "alias_name":"吴裕东",
+            "department":7,
+            "email":"hksac@139.com",
+            "is_staff":"True",
+            "job_title":5,
+            "password":"pbkdf2_sha256$24000$81xbRhAkb2ac$HC0PqpD8ybW/JKYvdRc7sJXTe6lq2Oiy0PFXzsaUDzg="
+        }
+    },
+    {
+        "model": "ShotEngine.projectbasetemplate", 
+        "pk": 1, 
+        "fields": {
+            "ProjName": "\u5356\u51b0\u51b0", 
+            "ProjAliasName": "maibingbing", 
+            "ProjRootPath": "\\\\192.168.0.243\\nas\\filmServe\\1015_JA_MaiBingBing", 
+            "creatTime": "2016-10-27T06:00:04.459Z", 
+            "modifyTime": "2016-10-27T06:00:04.459Z", 
+            "RawPlatesPath": "//192.168.0.243/nas/filmServe/1015_JA_MaiBingBing/VFX/rawPlates", 
+            "AssetsPath": "//192.168.0.243/nas/filmServe/1015_JA_MaiBingBing/VFX/assets", 
+            "VFXPath": "//192.168.0.243/nas/filmServe/1015_JA_MaiBingBing/VFX/sequences", 
+            "DailyPath": "//192.168.0.243/nas/filmServe/1015_JA_MaiBingBing/VFX/VFX_Dailies", 
+            "EditPath": "//192.168.0.243/nas/filmServe/1015_JA_MaiBingBing/Online", 
+            "Producer": [1], 
+            "SuperVisor": [5], 
+            "TeamLeader": [7]
+        }
+    },
+    {
+        "model": "ShotEngine.projectbasetemplate", 
+        "pk": 2, 
+        "fields": {
+            "ProjName": "\u4e09\u751f", 
+            "ProjAliasName": "Three Lives", 
+            "ProjRootPath": "\\\\192.168.0.243\\nas\\filmServe\\1016_MH_ThreeLives", 
+            "RawPlatesPath": "//192.168.0.243/nas/filmServe/1016_MH_ThreeLives/VFX/rawPlates", 
+            "AssetsPath": "//192.168.0.243/nas/filmServe/1016_MH_ThreeLives/VFX/assets", 
+            "VFXPath": "//192.168.0.243/nas/filmServe/1016_MH_ThreeLives/VFX/sequences", 
+            "DailyPath": "//192.168.0.243/nas/filmServe/1016_MH_ThreeLives/VFX/VFX_Dailies", 
+            "EditPath": "//192.168.0.243/nas/filmServe/1016_MH_ThreeLives/Online", 
+            "creatTime": "2016-11-02T03:37:12Z", 
+            "modifyTime": "2016-11-03T07:49:56Z", 
+            "Producer": [2], 
+            "SuperVisor": [6], 
+            "TeamLeader": [7, 8]
+        }
+    }, 
+    {
+        "model": "ShotEngine.projectbasetemplate", 
+        "pk": 3, 
+        "fields": {
+            "ProjName": "\u86df\u73e0\u4f20", 
+            "ProjAliasName": "jiaozhuzhuan", 
+            "ProjRootPath": "\\\\192.168.0.243\\nas\\filmServe\\1019_JA_JZZ", 
+            "RawPlatesPath": "//192.168.0.243/nas/filmServe/1019_JA_JZZ/VFX/rawPlates", 
+            "AssetsPath": "//192.168.0.243/nas/filmServe/1019_JA_JZZ/VFX/assets", 
+            "VFXPath": "//192.168.0.243/nas/filmServe/1019_JA_JZZ/VFX/sequences", 
+            "DailyPath": "//192.168.0.243/nas/filmServe/1019_JA_JZZ/VFX/VFX_Dailies", 
+            "EditPath": "//192.168.0.243/nas/filmServe/1019_JA_JZZ/Online", 
+            "creatTime": "2016-11-03T07:55:03Z", 
+            "modifyTime": "2016-11-03T07:56:09Z", 
+            "Producer": [1, 2], 
+            "SuperVisor": [6], 
+            "TeamLeader": [7]
+        }
+    },
+    {
+        "model": "ShotEngine.scene", 
+        "pk": 1, 
+        "fields": {
+            "projectName": 1, 
+            "title": "\u9e45-\u573a", 
+            "description": "\u5236\u4f5ccg\u9e45"
+        }
+    }, 
+    {
+        "model": "ShotEngine.scene", 
+        "pk": 2, 
+        "fields": {
+            "projectName": 1, 
+            "title": "\u732a-\u573a", 
+            "description": "\u5236\u4f5ccg\u732a"
+        }
+    }, 
+    {
+        "model": "ShotEngine.scene", 
+        "pk": 3, 
+        "fields": {
+            "projectName": 2, 
+            "title": "\u5929\u5bab", 
+            "description": "\u5236\u4f5ccg\u5929\u5bab"
+        }
+    }, 
+    {
+        "model": "ShotEngine.scene", 
+        "pk": 4, 
+        "fields": {
+            "projectName": 2, 
+            "title": "\u6843\u82b1\u6797", 
+            "description": "\u5236\u4f5ccg\u6843\u82b1\u6797"
+        }
+    },
+    {
+        "model": "ShotEngine.shotrepository", 
+        "pk": 1, 
+        "fields": {
+            "sceneName": 1, 
+            "shotName": "MBB_E_0010", 
+            "Description": "dddd", 
+            "createTime": "2016-11-02T03:19:51Z", 
+            "PublishTime": "2016-11-02T03:19:51Z"
+        }
+    }, 
+    {
+        "model": "ShotEngine.shotrepository", 
+        "pk": 2, 
+        "fields": {
+            "sceneName": 1, 
+            "shotName": "MBB_E_0020", 
+            "Description": "", 
+            "createTime": "2016-11-02T03:20:10Z", 
+            "PublishTime": "2016-11-02T03:20:10Z"
+        }
+    }, 
+    {
+        "model": "ShotEngine.shotrepository", 
+        "pk": 3, 
+        "fields": {
+            "sceneName": 1, 
+            "shotName": "MBB_Z_0010", 
+            "Description": "dddd", 
+            "createTime": "2016-11-02T03:20:24Z", 
+            "PublishTime": "2016-11-02T03:20:24Z"
+        }
+    }, 
+    {
+        "model": "ShotEngine.shotrepository", 
+        "pk": 4, 
+        "fields": {
+            "sceneName": 4, 
+            "shotName": "MBB_taohualin_001", 
+            "Description": "", 
+            "createTime": "2016-11-02T03:39:16Z", 
+            "PublishTime": "2016-11-02T03:39:16Z"
+        }
+    },
+    {
+        "model": "ShotEngine.shotrepository", 
+        "pk": 5, 
+        "fields": {
+            "sceneName": 1, 
+            "shotName": "MBB_E_0030", 
+            "Description": "\u9e45\u7684\u52a8\u4f5c\u662f\u91cd\u70b9ddd", 
+            "createTime": "2016-11-02T07:51:40Z", 
+            "PublishTime": "2016-11-02T07:51:40Z"
+        }
+    }
+]

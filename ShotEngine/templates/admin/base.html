@@ -1,0 +1,149 @@
+{% load i18n admin_static %}<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+<title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static "admin/css/base.css" %}{% endblock %}" />
+{% block extrastyle %}{% endblock %}
+{% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% static "admin/css/rtl.css" %}{% endblock %}" />{% endif %}
+{% block extrahead %}{% endblock %}
+{% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE" />{% endblock %}
+
+<script type="text/javascript">
+    function tobottom(){
+        var bodyElm      = document.body;
+        var bottomElm    = document.getElementById('bottomtag');
+        var BrowerHeight = window.innerHeight || document.body.clientHeight;
+
+        if(window.innerHeight >= bodyElm.clientHeight){
+            bottomElm.style.top = window.innerHeight-bodyElm.clientHeight -10 + 'px';
+        }
+    };
+
+    var picList = Array(
+        '/static/icon/picturebar1.png',
+        '/static/icon/picturebar2.png',
+        '/static/icon/picturebar3.png',
+        '/static/icon/picturebar4.png',
+        '/static/icon/picturebar5.png',
+        '/static/icon/picturebar6.png',
+        '/static/icon/picturebar7.png',
+        '/static/icon/picturebar8.png');
+    var Index = 0;
+
+    var getElementsByClass = function(searchClass,node,tag) {
+        var classElements = new Array();
+        var els = document.getElementsByTagName('*');
+        var elsLen = els.length;
+        var pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
+
+        for (i = 0, j = 0; i < elsLen; i++) {
+            if ( pattern.test(els[i].className) ) {
+                classElements[j] = els[i];
+                j++;
+            }
+        }
+        return classElements[0];
+    } ;
+
+    function replaceBackgroundPictrue(){
+        var picDiv = getElementsByClass('breadcrumbs');
+        Index = Index + 1;
+        if(Index == 7){
+            Index = 0;
+        }
+        picDiv.style.backgroundImage = 'url(' + picList[Index] + ')';
+    };
+
+    function Doing(){
+        var picDiv = getElementsByClass('breadcrumbs');
+        if (picDiv){
+            window.setInterval("replaceBackgroundPictrue()",10000);
+        };
+    };
+
+</script>
+
+</head>
+{% load i18n %}
+
+<body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}"
+  data-admin-utc-offset="{% now "Z" %}" onresize='tobottom();' onload='tobottom();Doing();'>
+
+<!-- Container -->
+<div id="container">
+    {% if not is_popup %}
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        {% block branding %}{% endblock %}
+        <!--<h1 id="site-name"><a href="/admin/">CorgiShot Management</a></h1>-->
+        </div>
+        {% block usertools %}
+        {% if has_permission %}
+        <div id="user-tools">
+            {% block welcome-msg %}
+                {% trans 'Welcome,' %}
+                <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+            {% endblock %}
+            {% block userlinks %}
+                {% if site_url %}
+                    <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+                {% endif %}
+                {% if user.is_active and user.is_staff %}
+                    {% url 'django-admindocs-docroot' as docsroot %}
+                    {% if docsroot %}
+                        <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+                    {% endif %}
+                {% endif %}
+                {% if user.has_usable_password %}
+                <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+                {% endif %}
+                <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+            {% endblock %}
+        </div>
+        {% endif %}
+        {% endblock %}
+        {% block nav-global %}{% endblock %}
+    </div>
+    <!-- END Header -->
+    {% block breadcrumbs %}
+    <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    {% if title %} &rsaquo; {{ title }}{% endif %}
+    </div>
+    {% endblock %}
+    {% endif %}
+
+    {% block messages %}
+        {% if messages %}
+        <ul class="messagelist">{% for message in messages %}
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message|capfirst }}</li>
+        {% endfor %}</ul>
+        {% endif %}
+    {% endblock messages %}
+
+    <!-- Content -->
+    <div id="content" class="{% block coltype %}colM{% endblock %}">
+        {% block pretitle %}{% endblock %}
+        {% block content_title %}{% ifequal title 'Site administration' %}<h1>CorgiShot System Management</h1>{% else %}<h1>{{ title }}</h1>{% endifequal %}{% endblock %}
+        {% block content %}
+        {% block object-tools %}{% endblock %}
+        {{ content }}
+        {% endblock %}
+        {% block sidebar %}{% endblock %}
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    {% block footer %}<div id="footer"></div>{% endblock %}
+</div>
+<!-- END Container -->
+</body>
+
+<div id='bottomtag' style='text-align:center;color:grey;position:relative;float:bottom;'>
+    <div style='font-size:13px;'>Copyright © 2011-2016 CorgiShot.</div>
+    <div style=''>当前呈现版本00.00.01</div>
+    <div style='font-size:13px;'>京ICP备16052472号</div>
+</div>
+</html>
